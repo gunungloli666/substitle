@@ -62,8 +62,8 @@ foreach-object{
 	# sebenarnya nomornya mau dirubah juga tapi g jadi
 	# $_ -replace "^.*-->.*$" , $sambung -replace $cari , $i  ;
 	$_ -replace "^.*-->.*$" , $sambung ;		
-	if($_ -match $cari){
-		$i++; 
-	}
+	# if($_ -match $cari){
+		# $i++; 
+	# }
 } |
 set-content  ./2_baru.srt; 
